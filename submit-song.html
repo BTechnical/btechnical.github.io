@@ -39,19 +39,28 @@
 
       <!-- Input field for user's name -->
       <label for="name">Singer(s):</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" size="25" required>
 
       <!-- Input field for key adjustments -->
       <label for="key">Key Adjustments:</label>
-      <input type="text" id="key" name="key">
+      <input type="text" id="key" name="key" size="3">
 
       <!-- Submit button -->
-      <button class="btn submit-song" type="submit">Submit Song</button>
+      <div>
+        <br>
+      <p>
       <button id="submit-song">I Wanna Sing</button>
+      </p>
+    </div>
     </form>
   </div>
   <!-- Submission status message -->
   <div id="submissionStatus"></div>
+
+  <footer>
+    <br>
+   <p><a href="index.html">Back to Song Search</a></p> 
+  </footer>
 </div>
    <!-- Include JavaScript for frontend functionality -->
    <script src="/submit.bundle.js"></script>
