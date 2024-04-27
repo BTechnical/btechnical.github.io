@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a308d">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Karaoke Songs</title>
+  <!-- Include CSS framework for styling, e.g., Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Karaoke Songs</h1>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="btnSong">FIND SONG</button>
+    <button id="btnArtist">FIND ARTIST</button>
+    <button id="btnGenre">FIND GENRE</button>
+    <table id="resultsTable" class="table">
+      <!-- Table headers here -->
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Year</th>
+          <th>Language</th>
+          <th>Genres</th>
+          <th>Key</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <!-- Search results will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Include JavaScript for frontend functionality -->
+  <script src="/index.bundle.js"></script>
+  <script src="/typesense.min.js"></script>
+ <!-- <script src="/bob.bundle.js"></script>  -->
+</body>
+</html>
