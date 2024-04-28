@@ -6,12 +6,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a308d">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>Karaoke Songs</title>
   <!-- Include CSS framework for styling, e.g., Bootstrap -->
+  <link rel="stylesheet" href="/styles/index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -19,7 +19,11 @@
     <h1>Rainbow Karaoke Song Search</h1>
     <h3>You can search for title or artist or a combination.</h3>
     <input type="text" id="searchInput" placeholder="Search...">
-    <button id="btnSong">FIND SONG</button>
+    
+    <button id="btnSongOnly">SEARCH SONG</button>
+    <button id="btnArtist">SEARCH ARTIST</button>
+    <button id="btnGenre">SEARCH GENRE</button>
+    <button id="btnSong">FIND SONG or ARTIST</button>
     <table id="resultsTable" class="table">
       <!-- Table headers here -->
       <thead>
@@ -29,6 +33,7 @@
           <th>Year</th>
           <th>Language</th>
           <th>Genres</th>
+          <th>Key(s)</th>
         </tr>
       </thead>
       <tbody id="resultsBody">
