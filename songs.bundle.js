@@ -1,0 +1,1 @@
+new DataTable("#myTable",{responsive:!0}),$(document).ready((function(){$("#myTable").DataTable()}));
