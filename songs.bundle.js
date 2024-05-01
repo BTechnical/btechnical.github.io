@@ -1,1 +1,1 @@
-new DataTable("#myTable",{responsive:!0}),$(document).ready((function(){$("#myTable").DataTable()}));
+$("#myTable").DataTable({ajax:"/songs.txt",columns:[{data:"Title"},{data:"Artist"},{data:"Year"},{data:"Duo"},{data:"Explicit"},{data:"SongId"}]});
