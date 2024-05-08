@@ -8,8 +8,11 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
   
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-alphabetSearch/1.2.5/css/dataTables.alphabetSearch.css" rel="stylesheet" />
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-alphabetSearch/1.2.5/js/dataTables.alphabetSearch.min.js"></script>
 
 </head>
 <body>
@@ -37,6 +40,15 @@
                     <td align="center"><input type="checkbox" class="column_filter" id="col0_regex"></td>
                     <td align="center"><input type="checkbox" class="column_filter" id="col0_smart" checked="checked"></td>
                 </tr>
+                <tr id="search_songs">
+                    <td>Custom Search</td>
+                    <td align="center"><input type="text" class="filter_songs" id="filter_songs"></td>
+                    <td><button id="searchButton"> &#128269; </button></td>
+                    <td>
+                        <align="center">Artist  <input type="checkbox" class="box_artist" id="box_artist" checked="checked">
+                        <br><align="center">Song  <input type="checkbox" class="box_title" id="box_title" checked="checked">
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -44,7 +56,7 @@
         <table id="myTable" class="display" style="width:100%">
             <thead>
                 <tr>
-                    <th>Title</th>
+                    <th>Song</th>
                     <th>Artist</th>
                     <th>Year</th>
                     <th>Duet.</th>
@@ -55,7 +67,7 @@
             </thead>
             <tfoot>
                 <tr>
-                    <th>Title</th>
+                    <th>Song</th>
                     <th>Artist</th>
                     <th>Year</th>
                     <th>Duet.</th>

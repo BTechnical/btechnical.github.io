@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+    <link rel="stylesheet" href="/styles/songs.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
+  
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+
+</head>
+<body>
+    <div id="search-options">
+        <table cellpadding="3" cellspacing="0" border="0" style="width: 67%; margin: 0 auto 2em auto;">
+            <thead>
+                <p>Update: 3May2024T02:45</p>
+            </thead>
+            <tbody>
+                <tr id="search_songs">
+                
+                    <td align="center"><input type="text" class="searchInput" id="searchInput" placeholder="Search..." size="50">
+                    <button id="searchButton"> &#128269; </button></td>
+                    <td>
+                        Search Options:<br>
+                        <align="center">Artist  <input type="checkbox" class="box_artist" id="box_artist" checked="checked">
+                         <align="center">Song  <input type="checkbox" class="box_title" id="box_title" checked="checked">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="table-container">
+        <table id="resultsTable" class="display compact" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Duet</th>
+                    <th>Explicit</th>
+                    <th>SongId</th>
+                    <th draggable="true">Key</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Duet</th>
+                    <th>Explicit</th>
+                    <th>SongId</th>
+                    <th>Key</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="/songs.bundle.js"></script>
+  
+</body>
+</html>
