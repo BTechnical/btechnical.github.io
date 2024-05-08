@@ -15,23 +15,13 @@
 </head>
 <body>
     <div id="search-options">
-        <table cellpadding="3" cellspacing="0" border="0" style="width: 67%; margin: 0 auto 2em auto;">
-            <thead>
-            
-            </thead>
-            <tbody>
-                <tr id="search_songs">
-                
-                    <td align="center"><input type="text" class="searchInput" id="searchInput" placeholder="Search..." size="50">
-                    <button id="searchButton"> &#128269; </button></td>
-                    <td>
-                        Search Options:<br>
-                        <align="center">Artist  <input type="checkbox" class="box_artist" id="box_artist" checked="checked">
-                         <align="center">Song  <input type="checkbox" class="box_title" id="box_title" checked="checked">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <p>
+            <input type="text" class="searchInput" id="searchInput" placeholder="Search..." size="50">
+            <button id="searchButton" aria-setsize="20"> &#128269; </button>
+            <br>Search Options:  
+            <align="center">Artist  <input type="checkbox" class="box_artist" id="box_artist" checked="checked">
+            <align="center">Song  <input type="checkbox" class="box_title" id="box_title" checked="checked">
+        </p>
     </div>
     <div id="table-container">
         <table id="resultsTable" class="display compact" style="width:100%">
