@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a308d">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>Karaoke Songs</title>
-  <!-- Include CSS framework for styling, e.g., Bootstrap -->
-  <link rel="stylesheet" href="/styles/index.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Karaoke</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Rainbow Karaoke Song Requests</h1>
-    <h3>Today's Requests</h3>
     
+    <<div class="container-fluid rounded" style="background-color: #370b75; min-height: 77px; padding-top: 10px;">
+     
+        <img src="/images/rainbowKaraoke-logo1.jpg" alt="Logo" style="width:17%; max-width: 97px;" class="rounded-circle float-left" >
+        <h1 class="text-hide">Raingbow Karaoke</h1>
     
-    <table id="resultsTable" class="table">
-      <!-- Table headers here -->
-      <thead>
-        <tr>
-          <th>Singer</th>
-          <th>Song</th>
-          <th>Artist</th>
-          <th>Year</th>
-          <th>Song Id</th>
-          <th>Language</th>
-          <th>Key(s)</th>
-          <th>TimeStamp</th>
-          <th>Added</th>
-          <th>Done</th>
-        </tr>
-      </thead>
-      <tbody id="requestsBody">
-        <!-- Search results will be inserted here -->
-      </tbody>
-    </table>
-  </div>
+         
+                <img src="/images/rainbowKaraoke-name-shadow2.png" alt="Rainbow Karaoke" style="width:75%; max-width: 400px;" HSPACE="10">
 
-  <!-- Include JavaScript for frontend functionality -->
-  <script src="/requests.bundle.js"></script>
- <!-- <script src="/bob.bundle.js"></script>  -->
+    </div>
+
+    <div id="version">Version: </div>
+    <div id="return-to-here"></div>
+
+    <div id="table-container" style="max-height: 90%;">
+        
+        <table id="resultsTable" class="display table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Singer</th>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Song Id</th>
+                    <th>Language</th>
+                    <th draggable="true">Key(s)</th>
+                    <th draggable="true">KeyAdjustment</th>
+                    <th draggable="true">TimeStamp</th>
+                    <th>Status</th>
+                    <th>Request ID</th>
+                  </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th>Singer</th>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Song Id</th>
+                    <th>Language</th>
+                    <th draggable="true">Key(s)</th>
+                    <th draggable="true">Key Adj</th>
+                    <th draggable="true">TimeStamp</th>
+                    <th>Status</th>
+                    <th>Request ID</th>
+                  </tr>
+            </tfoot>
+        </table>
+    </div>
+    Version:
+    <div id="version"></div>
+    <script src="/requests.bundle.js"></script>
 </body>
 </html>

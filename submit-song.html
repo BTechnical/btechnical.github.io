@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a308d">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>Song Request</title>
+
+  <title>Rainbow Karaoke Song Request</title>
+  <link rel="stylesheet" href="/styles/index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
   
 <body>
-<div class="container">
-    <!-- Song details -->
-    <h2><div id="header"></div></h2>
+<div class="container-fluid rounded" style="background-color: #370b75; min-height: 77px; padding-top: 10px;">
+     
+        <img src="/images/rainbowKaraoke-logo1.jpg" alt="Logo" style="width:17%; max-width: 97px;" class="rounded-circle float-left" >
+        <h1 class="text-hide">Raingbow Karaoke</h1>
+    
+         
+                <img src="/images/rainbowKaraoke-name-shadow2.png" alt="Rainbow Karaoke" style="width:75%; max-width: 400px;" HSPACE="10">
+
+    </div>
+<div class="container-fluid rounded">
+   
 
     <!-- Request Form -->
-  <div id="requestForm">
+  <div id="requestForm" class="rounded" style="background-color: #d5d0dc; width: 100%; max-width: 450px; padding: 7px;">
+     <!-- Song details -->
+     <h2><div id="header"></div></h2>
     <p><div>
       <span id="title"></span> by <span id="artist"></span>
     </div></p>
     <p><span id="year"></span>   -   <span id="language"></span></p>
-    <br><span id="styles"></span>
+    <span id="styles"></span>
+    <hr>
     <!-- Submission form -->
     <form id="submissionForm">
       <!-- Hidden input fields for song details -->
@@ -40,24 +51,26 @@
 
       <!-- Input field for user's name -->
       <label for="name">Singer(s):</label>
-      <input type="text" id="name" name="name" size="25" required>
+      <input type="text" id="name" name="name" size="25" required autocomplete="given-name">
 
       <!-- Input field for key adjustments -->
       <div>Key: <span id="key"></span></div>
-      <label for="key">Key Adjustments:</label>
-      <input type="text" id="keyAdjustment" name="keyAdjustment" size="3">
+      <label for="keyAdjustment">Adjust (+/-):</label>
+      <input type="number" step="1" min="-8" max="8" id="keyAdjustment" name="keyAdjustment" value="0">
 
-      <!-- Submit button -->
       <div>
-        <br>
+      
       <p>
+        
+        <!-- Submit button -->
       <button id="submit-song">I Wanna Sing</button>
       </p>
     </div>
     </form>
-  </div>
-  <!-- Submission status message -->
+     <!-- Submission status message -->
   <div id="submissionStatus"></div>
+  </div>
+ 
 
   <footer>
     <br>
