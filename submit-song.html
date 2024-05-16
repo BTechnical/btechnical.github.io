@@ -27,7 +27,7 @@
      <!-- Song details -->
      <h2><div id="header"></div></h2>
     <p><div>
-      <span id="title"></span> by <span id="artist"></span>
+      <span id="title" style="font-weight: bold; font-style: italic;"></span> by <span id="artist" ></span>
     </div></p>
     <p><span id="year"></span>   -   <span id="language"></span></p>
     <span id="styles"></span>
@@ -48,10 +48,28 @@
       <input type="text" id="name" name="name" size="25" required autocomplete="given-name">
 
       <!-- Input field for key adjustments -->
-      <div>Key: <span id="key"></span></div>
-      <label for="keyAdjustment">Adjust (+/-):</label>
-      <input type="number" step="1" min="-8" max="8" id="keyAdjustment" name="keyAdjustment" value="0">
+      <div>Key: <span id="key" style="font-weight: bold;"></span>
+      
+      <label for="keyAdjustment">&nbsp;&nbsp;&nbsp;&nbsp; Adjust (+/-):   </label>
+        <select  id="keyAdjustment" name="keyAdjustment">
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0" selected>0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+        </select>
 
+    </div>
       <div>
       
       <p>
