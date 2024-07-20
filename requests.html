@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainbow Karaoke</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/requests.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -18,51 +18,63 @@
     <div class="container-fluid rounded" style="background-color: #370b75; min-height: 77px; padding-top: 6px;">
         <img src="/images/rainbowKaraoke-logo.jpg" alt="Logo" style="width:17%; max-width: 97px;" class="rounded-circle float-left" >
         <img src="/images/rainbowKaraoke-name.png" alt="Rainbow Karaoke" style="width:75%; max-width: 400px;">
-        <h1 class="text-hide">Raingbow Karaoke</h1>
+        <button id="trigger-sort" class="sort-button">Re-Sort</button>
+        <div class="statusButtons"> 
+            <button id="filter-all" class="statusButton">All</button>
+            <button id="filter-new" class="statusButton">New</button> 
+            <button id="filter-added" class="statusButton">Added</button> 
+            <button id="filter-pending" class="statusButton">New/Added</button> 
+            <button id="filter-done" class="statusButton">Done</button> 
+       </div>
+        <Ver id="version" class="version">Version: </Ver>
+        
+        <h1 class="text-hide">Rainbow Karaoke</h1>
+          
+    </div>
+    
+    <div>
+        Toggle column: <a class="toggle-vis" data-column="12">Status Hidden</a> - <a class="toggle-vis" data-column="4">Year</a>
     </div>
 
-    <div id="version">Version: </div>
-    <div id="return-to-here"></div>
-    <div>
-        Toggle column: <a class="toggle-vis" data-column="11">Doc Id</a> - <a class="toggle-vis" data-column="4">Year</a>
-    </div>
-    <div> <button id="filter-new">Filter New</button>  <button id="filter-all">Filter All   </button></div>
+    
     <div id="table-container" style="max-height: 90%;">
         
         <table id="resultsTable" class="display table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
                     <th>Singer</th>
+                    <th draggable="true">KeyAdjustment</th>
                     <th>Song</th>
                     <th>Artist</th>
                     <th>Year</th>
                     <th>Song Id</th>
                     <th>Language</th>
                     <th draggable="true">Key(s)</th>
-                    <th draggable="true">KeyAdjustment</th>
                     <th draggable="true">TimeStamp</th>
                     <th>Status</th>
                     <th>Order</th>
-                    <th>Request ID</th>
                     <th>Done Time</th>
+                    <th>Status Hidden</th>
+                    <th>Request ID</th> 
                   </tr>
             </thead>
 
             <tfoot>
                 <tr>
                     <th>Singer</th>
+                    <th draggable="true">KeyAdjustment</th>
                     <th>Song</th>
                     <th>Artist</th>
                     <th>Year</th>
                     <th>Song Id</th>
                     <th>Language</th>
                     <th draggable="true">Key(s)</th>
-                    <th draggable="true">Key Adj</th>
                     <th draggable="true">TimeStamp</th>
                     <th>Status</th>
                     <th>Order</th>
-                    <th>Request ID</th>
                     <th>Done Time</th>
+                    <th>Status Hidden</th>
+                    <th>Request ID</th> 
                   </tr>
             </tfoot>
         </table>
