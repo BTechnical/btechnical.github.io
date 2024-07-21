@@ -26,7 +26,7 @@
             <button id="filter-pending" class="statusButton">New/Added</button> 
             <button id="filter-done" class="statusButton">Done</button> 
        </div>
-        <Ver id="version" class="version">Version: </Ver>
+        <Ver id="version" class="versionCSS">Version: </Ver>
         
         <h1 class="text-hide">Rainbow Karaoke</h1>
           
@@ -34,9 +34,14 @@
     
     <div>
         Toggle column: <a class="toggle-vis" data-column="12">Status Hidden</a> - <a class="toggle-vis" data-column="4">Year</a>
+        <Stats class="stats">
+            <Done class="stat"><div id=doneCount>Done:  </div></Done>  
+            <New class="stat"><div id="newCount">New:  </div></New>  
+            <Pending class="stat"><div id=pendingCount>Pending:  </div></Pending>  
+        </Stats> 
     </div>
 
-    
+
     <div id="table-container" style="max-height: 90%;">
         
         <table id="resultsTable" class="display table-striped table-bordered" style="width:100%">
@@ -62,7 +67,7 @@
             <tfoot>
                 <tr>
                     <th>Singer</th>
-                    <th draggable="true">KeyAdjustment</th>
+                    <th draggable="true">KeyAdj</th>
                     <th>Song</th>
                     <th>Artist</th>
                     <th>Year</th>
