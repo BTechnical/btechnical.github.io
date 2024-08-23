@@ -16,10 +16,13 @@
 </head>
   
 <body>
-<div class="container-fluid rounded" style="background-color: #370b75; min-height: 77px; padding-top: 6px;">
-  <img src="/images/rainbowKaraoke-logo.jpg" alt="Logo" style="width:17%; max-width: 97px;" class="rounded-circle float-left" >
-  <img src="/images/rainbowKaraoke-name.png" alt="Rainbow Karaoke" style="width:75%; max-width: 400px;">
-  <h1 class="text-hide">Raingbow Karaoke</h1>
+  <div class="header-pride">
+    <div class="header-images"></div>
+        <img src="/images/rainbowKaraoke-logo.jpg" alt="Logo" style="width:17%; max-width: 97px;" class="rounded-circle float-left" >
+        <img src="/images/rainbowKaraoke-name.png" alt="Rainbow Karaoke" style="width:75%; max-width: 400px;">
+        <img src="/images/prideEdition.png" alt="Pride Edition" style="width:75%; max-width: 400px;">
+        <h1 class="text-hide">Raingbow Karaoke</h1>
+    </div>  
 </div>
 <div class="container-fluid rounded">
     <!-- Request Form -->
@@ -31,6 +34,7 @@
     </div></p>
     <p><span id="year"></span>   -   <span id="language"></span></p>
     <span id="styles"></span>
+    <span id="pride" hidden></span>
     <hr>
     <!-- Submission form -->
     <form id="submissionForm">
@@ -42,6 +46,7 @@
       <input type="hidden" name="styles" id="styleInput">
       <input type="hidden" name="id" id="idInput">
       <input type="hidden" name="key" id="keyInput">
+      <input type="hidden" name="pride" id="prideInput">
 
       <!-- Input field for user's name -->
       <label for="name">Singer(s):</label>

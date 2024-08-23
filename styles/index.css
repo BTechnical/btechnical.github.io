@@ -2,6 +2,28 @@ body {
     background-color: #351961;
 }
 
+.header-image {
+  background-image: url('/images/stripes-60.png'); 
+  background-repeat: repeat-x;
+  background-size: 114px 100px; 
+  background-color: #d7c8ec; 
+  min-height: 77px; 
+  padding-top: 6px;
+}
+
+.header-reg {
+  background-color: #370b75; 
+  min-height: 77px; 
+  padding-top: 6px;
+}
+
+.header-pride {
+  background-color: #64dcf1; 
+  min-height: 77px; 
+  padding-top: 6px;
+}
+
+
 .form-control{
   border-radius: 5px;
 }
